@@ -1,4 +1,4 @@
-#Output arranged to it's on one single line 
+#Output arranged so it's on one single line 
 print("Knowledge is power!")
 print("\n")
 
