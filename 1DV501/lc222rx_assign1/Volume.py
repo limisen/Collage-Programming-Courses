@@ -2,10 +2,10 @@
 import math
 
 #Aquireing a value for the spheres radius form the user.
-#r = float(input("Please provide a radius of some sphere: "))
+r = float(input("Please provide a radius of some sphere: "))
 
 #setting the value to 6 for debug purposes
-r = 6
+#r = 6
 
 #formula for the spheres volume
 v = V=(4/3) * (math.pi) * (r**3)
