@@ -10,6 +10,7 @@ if price > payment_amt:
 change = payment_amt - round(price) 
 print("Change: " + str(int(change)) + "kr")
 
+#Here and below needs work!
 x = [2, 2, 2.5, 2, 2, 2.5, 2 ,2 , 2.5, 2]
 y = 0
 z = 2000
