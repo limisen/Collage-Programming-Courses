@@ -11,17 +11,22 @@ change = payment_amt - round(price)
 print("Change: " + str(int(change)) + "kr")
 
 #Here and below needs work!
-x = [2, 2, 2.5, 2, 2, 2.5, 2 ,2 , 2.5, 2]
-y = 0
-z = 2000
+x = [1000, 500, 200, 100, 50, 20 , 10, 5, 1]
 n = 0
+billsum = 0
 
-
-for n in range(0,10):
-    a = 0
-    while a != change:
-        z = z / x[n] 
-        nr = int(z // z)
-        print(str(z) + "kr bills: " + str(nr))
-        n = (n+1)
-        a = z + z
+while n != len(x):
+    while billsum != change or n != len(x):
+        print(billsum)
+        nr = int(change / x[n])
+        if nr >= 1 :
+            if billsum >= change:
+                print("{:=4d}kr bills: {}".format(x[n], 0))
+            if billsum + x[n] > change:
+                print("{:=4d}kr bills: {}".format(x[n], 0))
+            else:
+                billsum = billsum + (x[n] * nr)
+                print("{:=4d}kr bills: {}       dog".format(x[n], nr))
+        else:
+            print("{:=4d}kr bills: {}       cat".format(x[n], 0))
+        n = n+1

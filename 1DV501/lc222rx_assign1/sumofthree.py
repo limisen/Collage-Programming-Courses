@@ -8,18 +8,18 @@ nr = int(input("Provide a three digit number please: "))
 hundreds = int(nr % 100)
 hundreds = nr - hundreds
 hundreds = hundreds // 100
-print("hundreds: ", hundreds)
+#print("hundreds: ", hundreds)
 
 #tens:
 tens =  nr - (nr - int(nr % 100))
 tens = tens // 10 
-print("tens: ", tens)
+#print("tens: ", tens)
 
 #ones:
 ones = nr - (nr - int(nr % 100))
 ones = ones % 10
 ones = ones
-print("ones: ", ones)
+#print("ones: ", ones)
 
 #Desierd output
 print("The sum of the given numbers: " + str(hundreds + tens + ones))

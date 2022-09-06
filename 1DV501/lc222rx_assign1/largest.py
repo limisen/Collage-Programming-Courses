@@ -11,4 +11,6 @@ if A > B and A > C:
 elif B > A and B > C:
     print("The largest number is: " + str(B))
 elif C > A and C > B:
-    print("The largest number is: " + str(B))
+    print("The largest number is: " + str(C))
+else:
+    print("The largest number is: " + str(C))

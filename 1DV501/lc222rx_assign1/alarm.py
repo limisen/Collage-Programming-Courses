@@ -33,10 +33,12 @@ else:
     if alarm >= 25:
         alarm = alarm - 24
         alarm = str(alarm) + ":00"
-    if alarm == 24:
+    elif alarm == 24:
         alarm = str(alarm) + ":00" + " or 00:00" 
-    else:
+    elif int(alarm) < 24:
         alarm = str(alarm) + ":00"
+    else:
+        alarm = str(alarm)
 
 #Tells the user when the alarm activates
 print("The alarm will go off at: " + alarm)
