@@ -1,7 +1,5 @@
-#Note: you may not convert the input from an integer to a string or a list, or anything else, you need to calculate the answer!
-
-#Note: This is a VG task, it may be skipped if so desired 
-
+#To sumerize this program seperates the integer given into 3 seperate numbers, hundreds, tens and ones. Ex: 425; hundreds = 4, tens = 2 and ones = 5
+#Then sums the numbers up, to continue with the example 4+2+5 = 11
 nr = int(input("Provide a three digit number please: "))
 
 #hundreds
@@ -21,5 +19,5 @@ ones = ones % 10
 ones = ones
 #print("ones: ", ones)
 
-#Desierd output
+#Diplays the output
 print("The sum of the given numbers: " + str(hundreds + tens + ones))

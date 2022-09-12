@@ -1,3 +1,4 @@
+#This program is suposed to calculate the change one should recive in as few swedish bills and coins as possible
 price = float(input("How much does it cost?: "))
 #price = 600
 
