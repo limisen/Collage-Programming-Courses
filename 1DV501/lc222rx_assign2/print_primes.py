@@ -1,16 +1,26 @@
-#
+# A program that asks for a number of prime numbers to print.
+# The program then prints them ten at a line and continues
+# on the next line.
+
 n = int(input("How many primes? "))
+nr = 0
+x = 0
+i = 0
+con_x = 0
 
-if n < 2:
-    print("Please provide a PRIME integer! ")
-else:
-    prime = True
-
-    for i in range(2, n):
-        if n%i == 0:
-            prime = False
-            break
-        if prime:
-            print(n, "is a prime number")
+while nr != n:
+    i += 1
+    con_x = 0
+    for div in range(1, i):
+        if (i % div) != 0:
+            con_x = 1
         else:
-            print(n, "is not a prime number. it is divisable by ", i)
+            con_x = 0
+
+    if (i % 2) != 0 and i % i == 0 and con_x == 1:
+        print(i, end=" ")
+        nr += 1
+        x += 1
+    if x == 10:
+        print("")
+        x = 0
