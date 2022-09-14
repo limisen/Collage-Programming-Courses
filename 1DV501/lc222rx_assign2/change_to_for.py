@@ -1,4 +1,4 @@
-#A converted program that uses a for loop instead of a while loop
+# A converted program that uses a for loop instead of a while loop
 count = 0
 total = 0
 

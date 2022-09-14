@@ -1,6 +1,3 @@
-from re import A
-
-
 print("Please provide three integers A, B, C.")
 A = int(input("Enter A: "))
 B = int(input("Enter B: "))
