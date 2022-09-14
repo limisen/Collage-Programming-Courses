@@ -9,7 +9,7 @@ total = []
 if n <= 1:
     n = int(input("Please provide a POSITVE INTEGER: "))
 
-for k in range(0, n, 2):
+for k in range(0,  n, 2):
     total.append(k)
     # print(total)
     largest = 0

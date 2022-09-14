@@ -1,4 +1,4 @@
-#This program calculates the value of inital savings given certain interest percentages
+# This program calculates the value of inital savings given certain interest percentages
 saving = int(input("Start value of savings: "))
 interest = int(input("Please provide the interest rate (in percentages): "))
 interest = (interest/100) + 1

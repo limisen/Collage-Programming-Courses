@@ -1,4 +1,4 @@
-#This program calculates the tax one should pay acourding to 3 income brackets. 
+# This program calculates the tax one should pay acourding to 3 income brackets.
 x = int(input("Please provide your monthly income: "))
 
 if x <= 38000:
