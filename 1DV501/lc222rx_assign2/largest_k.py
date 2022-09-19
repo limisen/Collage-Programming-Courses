@@ -11,15 +11,15 @@ if n <= 1:
 
 for k in range(0,  n, 2):
     total.append(k)
-    # print(total)
+    print(total)
     largest = 0
     for i in range(len(total)):
         largest += total[i]
         if largest >= n:
             total.pop()
-            # print(total)
+            print(total)
             break
     if largest >= n:
         break
 print(str(total[len(total) - 1]) + " ", end=" ")
-print("is the largest n such that 0 + 2 + 4 + 6 + ... + k < " + str(n))
+print("is the largest n such that 0+2+4+6+...+ k < " + str(n))
