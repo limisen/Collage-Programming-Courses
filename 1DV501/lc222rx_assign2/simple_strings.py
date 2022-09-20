@@ -1,6 +1,6 @@
 # ha
 
-import re
+from re import findall
 
 
 def first_last(s):
@@ -47,17 +47,17 @@ def char_symbol_number(s):
         s = input("Please enter a string: ")
 
     nr_chr = len(s)
+    nrs = findall('[0-9]+', s)
     nr_sym = []
 
     for i in range(0, len(s)):
         if not (s[i].isalpha()):
-            nr_sym = nr_sym.append(s[i])
+            nr_sym.append(s[i])
 
-    nrs = re.findall('[0-9]+', s)
-    print(f"In the sentence \"{s}\" the number of letters is {18},", end="")
-    print(f" symbols is {11} and numbers is {len(nrs)}\n")
+    print(f"In the sentence \"{s}\" the number of letters is {nr_chr}", end="")
+    print(f", symbols is {len(nr_sym)} and numbers is {len(nrs)}\n")
 
 
-#first_last(input("Enter a string (F,L): "))
-#char_types(input("Enter a string (Types): "))
+first_last(input("Enter a string (F,L): "))
+char_types(input("Enter a string (Types): "))
 char_symbol_number(input("Enter a string (sym): "))
