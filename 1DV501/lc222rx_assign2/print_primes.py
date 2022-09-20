@@ -19,4 +19,5 @@ while x != n:
             x += 1
             if z == 11:
                 z = 1
+                print("")
             print(number, end=" ")
