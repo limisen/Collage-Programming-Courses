@@ -8,7 +8,7 @@ def first_last(s):
     frst_chr = s[0]
     lst_chr = s[len(s) - 1]
 
-    print(f"First and last in \"{s}\": {frst_chr} and {lst_chr}\n")
+    print(f"First and last in \"{s}\": {frst_chr} and {lst_chr}\ng")
 
 
 def char_types(s):

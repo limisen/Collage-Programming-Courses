@@ -10,7 +10,7 @@ mini = 101
 avg = 0
 
 print("Generated values: ", end="")
-for i in range(0, n + 1):
+for i in range(0, n):
     rng = randrange(1, 100)
     print(rng, end=" ")
     if rng > maxi:
