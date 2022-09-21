@@ -1,5 +1,6 @@
 # Sentence builder, Builds a sentence using three functions that randomly
-# pick a word and then prints the sentence
+# pick a word out of 3 set lists of pronouns, verbs andn nouns.
+# then prints the sentence ten times
 from random import randrange
 
 

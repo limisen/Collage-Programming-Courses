@@ -1,10 +1,9 @@
-# ha
-
+# 
 from re import findall
 
 
 def first_last(s):
-    # Prints the first and last character in the string s
+    """Prints the first and last character in the string s"""
     if s == "":
         s = input("Please enter a string: ")
 
@@ -15,7 +14,7 @@ def first_last(s):
 
 
 def char_types(s):
-    # Prints the number of vowels and consonants in string s
+    """Prints the number of vowels and consonants in string s"""
     if s == "":
         s = input("Please enter a string: ")
 
@@ -41,8 +40,8 @@ def char_types(s):
 
 
 def char_symbol_number(s):
-    # Prints the number of characters, symbols (including spaces)
-    # and numbers in string s
+    """Prints the number of characters, symbols (including spaces)
+    and numbers in string s"""
     if s == "":
         s = input("Please enter a string: ")
 

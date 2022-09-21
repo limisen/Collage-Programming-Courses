@@ -1,4 +1,4 @@
-# A program that throws a dice number of times.
+# A program that throws a dice a number of times.
 # Then calculates the difference of the most and lest common die face.
 # Then calculates a sort of ratio said differnce
 from random import randrange

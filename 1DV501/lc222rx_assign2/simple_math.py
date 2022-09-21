@@ -1,32 +1,31 @@
-# ha
-
+# Eight math functions that do as follows
 
 def inc(n):
-    # Increments n with one
+    """Increases n with one, n + 1"""
     n += 1
     return(n)
 
 
 def inc_with(n, t):
-    # Increments n with the value of t
+    """Increases n with the value of t, n + t"""
     n += t
     return(n)
 
 
 def dec(n):
-    # Decrements n with one
+    """Decreases n with one, n - 1"""
     n -= 1
     return(n)
 
 
 def dec_with(n, t):
-    # Decrements n with the value of t
+    "Decreases n with the value of t, n - t"""
     n -= t
     return(n)
 
 
 def greatest(n1, n2):
-    # Returns the largest of the values n1 and n2
+    """Returns the largest of the values n1 and n2"""
     if n1 > n2:
         return(n1)
     elif n2 > n1:
@@ -34,7 +33,7 @@ def greatest(n1, n2):
 
 
 def is_even(n):
-    # Returns True if n is even, otherwise false
+    """Returns True if n is even, otherwise False"""
     if (n % 2) == 0:
         return(True)
     else:
@@ -42,12 +41,15 @@ def is_even(n):
 
 
 def power(x, n):
-    # Returns x to the power of n
+    """Returns x to the power of n, x**n"""
     return(x**n)
 
 
 def factorial(n):
-    # Returns the factorial of n
+    """Returns the factorial of n,\n
+    n = 5 \n
+    n = 5*4*3*2*1
+    """
     for i in range(n, 0, -1):
         n += i*i
     return(n)

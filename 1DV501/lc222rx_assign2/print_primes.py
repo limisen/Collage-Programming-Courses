@@ -1,6 +1,6 @@
 # A program that asks for a number of prime numbers to print.
 # The program then prints them ten at a line and continues
-# on the next line.
+# on the next line untill the amount equalls the requested amount.
 
 n = int(input("How many primes? "))
 x = 0
