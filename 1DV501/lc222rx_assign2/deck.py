@@ -49,7 +49,7 @@ while amount != 52:
     rng = choice(list(A - exclude_set))
     if new_deck[rng] == 0:
         new_deck.insert(rng, cards[amount])
-        if rng < 52:
+        if rng < 52 and len(new_deck) == 53:
             new_deck.pop(rng + 1)
         amount += 1
     else:
