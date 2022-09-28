@@ -50,23 +50,25 @@ def factorial(n):
     n = 5 \n
     n = 5*4*3*2*1
     """
-    for i in range(n, 0, -1):
-        n += i*i
-    return(n)
+
+    x = 1
+    for i in range(n, 1, -1):
+        x = x * i
+    return(x)
 
 
-print(inc(45))
+print(inc(41))
 
-print(inc_with(45, 5))
+print(inc_with(30, 12))
 
-print(dec(45))
+print(dec(43))
 
-print(dec_with(45, 5))
+print(dec_with(52, 10))
 
-print(greatest(45, 50))
+print(greatest(24, 42))
 
-print(is_even(45))
+print(is_even(42))
 
-print(power(45, 5))
+print(power(2, 16))
 
-print(factorial(45))
+print(factorial(5))

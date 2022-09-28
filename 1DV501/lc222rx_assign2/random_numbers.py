@@ -20,6 +20,5 @@ for i in range(0, n):
     avg += rng
 avg = avg/n
 print("")
-
 print("Average, min, and max are: ", end="")
-print("{0:.1f}, {1} and {2}".format(avg, mini, maxi))
+print("{0:.2f}, {1} and {2}".format(avg, mini, maxi))

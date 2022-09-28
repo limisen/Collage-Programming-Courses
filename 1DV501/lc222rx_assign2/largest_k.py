@@ -7,17 +7,17 @@ largest = 0
 total = []
 
 if n <= 1:
-    n = int(input("Please provide a POSITVE INTEGER: "))
+    n = int(input("Please provide a POSITVE INTEGER!!!!: "))
 
 for k in range(0,  n, 2):
     total.append(k)
-    print(total)
+    # print(total)
     largest = 0
     for i in range(len(total)):
         largest += total[i]
         if largest >= n:
             total.pop()
-            print(total)
+            # print(total)
             break
     if largest >= n:
         break

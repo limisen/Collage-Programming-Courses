@@ -7,10 +7,11 @@ from random import randrange
 nrs = []
 avg = 0
 
-for i in range(0, 100):
+for i in range(0, 10):
     rng = randrange(1, 10000)
     nrs.append(rng)
     avg += rng
+    print(nrs)
 avg = avg/len(nrs)
 
 nrs.sort(reverse=True)

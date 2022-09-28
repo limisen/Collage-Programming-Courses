@@ -35,8 +35,8 @@ while amount != 52:
     if card not in cards:
         amount += 1
         cards.append(card)
-    else:
-        exclude_set.add(nr)
+    # else:
+        # exclude_set.add(nr)
 
 new_deck = [0] * 52
 
@@ -56,5 +56,5 @@ while amount != 52:
         exclude_set.add(rng)
 
 print("My hand:")
-for i in range(5):
+for i in range(52):
     print(cards[i])

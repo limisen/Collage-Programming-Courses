@@ -7,10 +7,11 @@ while count < 100:
     total = total + count
     count = count + 1
 
-print("While: " + str(count))
+print("While: " + str(total))
 # End of the while loop and it concerning
 
 # The converted (now for) loop;
+total = 0
 for n in range(100):
-    n += 1
-print("For: " + str(n))
+    total = total + n
+print("For: " + str(total))

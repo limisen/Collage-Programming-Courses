@@ -9,7 +9,7 @@ def first_last(s):
     frst_chr = s[0]
     lst_chr = s[len(s) - 1]
 
-    print(f"First and last in \"{s}\": {frst_chr} and {lst_chr}\n")
+    return(s, frst_chr, lst_chr)
 
 
 def char_types(s):
@@ -34,8 +34,7 @@ def char_types(s):
             if s[i] == consonants[n]:
                 c += 1
 
-    print(f"In that sentence, the number of vowels is {v} ", end="")
-    print(f"and the number of consonants is {c}\n")
+    return(s, v, c)
 
 
 def char_symbol_number(s):
@@ -52,10 +51,16 @@ def char_symbol_number(s):
         if not (s[i].isalpha()):
             nr_sym.append(s[i])
 
-    print(f"In the sentence \"{s}\" the number of letters is {nr_chr}", end="")
-    print(f", symbols is {len(nr_sym)} and numbers is {len(nrs)}\n")
+    return(s, nr_chr, len(nr_sym), len(nrs))
 
 
-first_last(input("Enter a string (F,L): "))
-char_types(input("Enter a string (Types): "))
-char_symbol_number(input("Enter a string (sym): "))
+s, frst_chr, lst_chr = first_last(input("Enter a string (F,L): "))
+print(f"First and last in \"{s}\": {frst_chr} and {lst_chr}\n")
+
+s, v, c = char_types(input("Enter a string (Types): "))
+print(f"In that sentence, the number of vowels is {v} ", end="")
+print(f"and the number of consonants is {c}\n")
+
+s, nr_chr, nr_sym, nrs = char_symbol_number(input("Enter a string (sym): "))
+print(f"In the sentence \"{s}\" the number of letters is {nr_chr}", end="")
+print(f", symbols is {nr_sym} and numbers is {nrs}\n")

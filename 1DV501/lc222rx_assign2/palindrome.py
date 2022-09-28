@@ -6,17 +6,17 @@
 def is_palindrome(s):
     s = s.lower()
     s = s.strip()
-    l1 = []
-    l2 = []
+    org_str = []
+    reversed_str = []
 
     for i in range(0, len(s)):
         if (s[i].isalpha()):
-            l1.append(s[i])
+            org_str.append(s[i])
     for i in range(len(s) - 1, -1, -1):
         if (s[i].isalpha()):
-            l2.append(s[i])
+            reversed_str.append(s[i])
 
-    if l1 == l2:
+    if org_str == reversed_str:
         return(True)
     else:
         return(False)
