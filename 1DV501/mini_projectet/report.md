@@ -1,0 +1,3 @@
+## Problems and soulutions
+whilst working on the sec part of part one (Aquring the top 10 most frequently used word), I had a problem with how I made the dictinonary. I unknowingly made it so I for each word went through the whole file so it made it take (n * n) operations. This made it so for smaller files it worked no problem but for the "swe_news" which has over 15 million took many minutes to solve (never saw the output).
+This got solved by making it so for each word I once again count its nr of occurences but also remove said word from the list/file im reading from. 
