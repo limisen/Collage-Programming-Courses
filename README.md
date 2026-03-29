@@ -1,2 +1,1 @@
-This is the head-rep. For my current and future higer education programming/coding courses and their respective repos. 
-:D
+This is the repository for the 1DV501 Course I was taking at Södertörn
